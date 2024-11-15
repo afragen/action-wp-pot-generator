@@ -11,7 +11,7 @@ This Action Generates POT Files for your wordpress Plugin / Theme based on the c
 | `DOMAIN` | NULL | WordPress Theme / Plugin ***TextDomain*** |
 | `PACKAGE_NAME` | NULL | WordPress Theme / Plugin Name |
 | `HEADERS`  | NULL | Array in JSON format of custom headers which will be added to the POT file. Defaults to empty array. |
-| `EXCLUDE`  | NULL | Array in JSON format of paths to be excluded from the POT file. Defaults to empty array. |
+| `EXCLUDE`  | NULL | Comma separated list of paths to be excluded from the POT file. |
 | `GITHUB_TOKEN` | **secret** | you do not need to generate one but you do have to explicitly make it available to the Action |
 
 > **⚠️ Note:** You Should Provide Github Token. If Not Updated File Will Be Committed & Pushed.

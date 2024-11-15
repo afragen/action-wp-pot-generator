@@ -12,7 +12,7 @@ ITEM_SLUG="$(gh_input "ITEM_SLUG" "${GITHUB_REPOSITORY#*/}")"
 SAVE_PATH="$(gh_input "SAVE_PATH")"
 PACKAGE_NAME="$(gh_input "PACKAGE_NAME")"
 HEADERS="$(gh_input "HEADERS" "{}")"
-EXCLUDE="$(gh_input "EXCLUDE" "{}")"
+EXCLUDE="$(gh_input "EXCLUDE")"
 DOMAIN="$(gh_input "DOMAIN" "${ITEM_SLUG}")"
 SAVE_FULL_PATH="$SAVE_PATH/$DOMAIN.pot"
 
