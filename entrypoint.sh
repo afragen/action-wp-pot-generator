@@ -12,6 +12,7 @@ ITEM_SLUG="$(gh_input "ITEM_SLUG" "${GITHUB_REPOSITORY#*/}")"
 SAVE_PATH="$(gh_input "SAVE_PATH")"
 PACKAGE_NAME="$(gh_input "PACKAGE_NAME")"
 HEADERS="$(gh_input "HEADERS" "{}")"
+EXCLUDE="$(gh_input "EXCLUDE" "{}")"
 DOMAIN="$(gh_input "DOMAIN" "${ITEM_SLUG}")"
 SAVE_FULL_PATH="$SAVE_PATH/$DOMAIN.pot"
 
@@ -32,12 +33,13 @@ gh_log "DOMAIN        : $DOMAIN"
 gh_log "SLUG          : $SLUG"
 gh_log "PACKAGE_NAME  : $PACKAGE_NAME"
 gh_log "HEADERS       : $HEADERS"
+gh_log "EXCLUDE       : $EXCLUDE"
 gh_log "SAVE_PATH     : $SAVE_PATH/$DOMAIN.pot"
 gh_log_group_end
 
 gh_log
 gh_log_group_start "📝 Generating POT File"
-wp i18n make-pot . "$SAVE_FULL_PATH" --slug="$ITEM_SLUG" --package-name="$PACKAGE_NAME" --headers="$HEADERS" --domain="$DOMAIN" --allow-root
+wp i18n make-pot . "$SAVE_FULL_PATH" --slug="$ITEM_SLUG" --package-name="$PACKAGE_NAME" --headers="$HEADERS" --exclude="$EXCLUDE" --domain="$DOMAIN" --allow-root
 gh_log_group_end
 
 gh_log
