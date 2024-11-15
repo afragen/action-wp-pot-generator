@@ -33,3 +33,4 @@ runs:
     - ${{ inputs.domain }}
     - ${{ inputs.package_name }}
     - ${{ inputs.headers }}
+    - ${{ inputs.exclude }}
