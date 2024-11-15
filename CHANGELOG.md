@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## 2.1 - 11/15/2024
 * Added `EXCLUDE` parameter
+* Fixed typo in `SLUG` to `ITEM_SLUG`
 
 ## 2.0 - 06/11/2020
 * Migrated To `varunsridharan/actions-alpine-php:latest` Docker Image
