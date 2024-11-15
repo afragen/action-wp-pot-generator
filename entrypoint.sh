@@ -30,7 +30,7 @@ gh_log_group_end
 gh_log
 gh_log_group_start "📝 Parsed Arguments"
 gh_log "DOMAIN        : $DOMAIN"
-gh_log "SLUG          : $SLUG"
+gh_log "SLUG          : $ITEM_SLUG"
 gh_log "PACKAGE_NAME  : $PACKAGE_NAME"
 gh_log "HEADERS       : $HEADERS"
 gh_log "EXCLUDE       : $EXCLUDE"
