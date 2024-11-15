@@ -23,6 +23,9 @@ inputs:
   headers:
     description: 'Array in JSON format of custom headers which will be added to the POT file. Defaults to empty array.'
     required: false
+  exclude:
+    description: 'Array in JSON format of custom paths to exclude from the POT file. Defaults to empty array.'
+    required: false
 
 runs:
   using: 'docker'
